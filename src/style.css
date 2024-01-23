@@ -333,7 +333,39 @@ footer a{
 }
 
 
+
+
+
+
+.content .container .row:first-child h1{
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.content .container .row:first-child h3{
+  font-size: 22px;
+  font-weight: 500;
+}
+.content .container .row:first-child p{
+  font-size: 18px;
+}
+.currency_market h4{
+  font-weight: 500;
+}
+
 @media screen and (min-width: 768px) {
+  .container, .container-md, .container-sm {
+      max-width: 720px;
+  }
+  .content .container .row:first-child h1{
+    font-size: 48px;
+  }
+  .content .container .row:first-child h3{
+    font-size: 30px;
+  }
+  .content .container .row:first-child p{
+    font-size: 24px;
+  }
   .stats .styled_head th{
     width: 25% !important;
   }
@@ -389,7 +421,11 @@ footer a{
     font-size: 19px !important;
   }
 }
+
 @media screen and (min-width: 992px) {
+  .container, .container-lg, .container-md, .container-sm {
+      max-width: 960px;
+  }
   .logo_cover,
   .cta {
     width: 200px;
@@ -412,5 +448,13 @@ footer a{
 @media screen and (min-width: 1200px) {
   .text-xl {
     font-size: 4rem;
+  }
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1320px;
   }
 }
